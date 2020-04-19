@@ -6,11 +6,9 @@ chmod +x ~/20spokes-toolkit/20spokes
 FILE=~/.bash_profile
 if test -f "$FILE"; then
   echo 'export PATH="$HOME/20spokes-toolkit:$PATH"' >> $FILE
-  exec bash
 fi
 
 FILE=~/.zshrc
 if test -f "$FILE"; then
   echo 'export PATH="$HOME/20spokes-toolkit:$PATH"' >> $FILE
-  exec zsh
 fi
